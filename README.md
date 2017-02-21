@@ -13,5 +13,5 @@
 
 #### 数据结构
 - 红黑树的学习和简单实现
-- [教你透彻了解红黑树](http://www.cnblogs.com/v-July-v/archive/2010/12/29/1983707.html)
-- [从2-3-4树到红黑树](http://www.cnblogs.com/nullzx/p/6111175.html)
+- [教你透彻了解红黑树(转载)](http://www.cnblogs.com/v-July-v/archive/2010/12/29/1983707.html)
+- [从2-3-4树到红黑树（转载）](http://www.cnblogs.com/nullzx/p/6111175.html)
