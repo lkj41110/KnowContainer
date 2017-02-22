@@ -13,6 +13,7 @@ public class MyRBTree<E> {
 
 		public Node(E e, Node<E> parent, Node<E> left, Node<E> right, boolean color) {
 			this.e = e;
+			this.parent=parent;
 			this.left = left;
 			this.right = right;
 			this.color = color;
@@ -92,37 +93,47 @@ public class MyRBTree<E> {
 	 */
 	private void fixAfterInsertion(Node<E> e) {
 		e.color = RED;
-		while (e != null && e != root && e.color == RED) {
+		while (e != null && e != root && e.parent.color == RED) {
 			Node<E> u,p,g;
-			
-			if (e.parent == e.parent.parent.left) {
-				uncle = e.parent.parent.right;
+			p=e.parent;
+			g=p.parent;
+			if (p == g.left) {
+				u = g.right;
 			} else
-				uncle = e.parent.parent.left;
+				u = g.left;
 			// 父红叔红
-			if (uncle.color == RED) {
-				uncle.color = BlACK;
-				e.parent.color = BlACK;
-				e.parent.parent.color = RED;
+			if (u.color == RED) {
+				u.color = BlACK;
+				p.color = BlACK;
+				g.color = RED;
 				// 向上回溯
-				e = e.parent.parent;
+				e = g;
 			} else {
 				// 父红叔黑，需要旋转，四种情况
-				if (e.parent == e.parent.parent.left) {
-					if (e == e.parent.left) {
-						rotateRight(e.parent);
-						
+				if (p == g.left) {
+					if (e == p.left) {
+						rotateRight(g);
+						p.color=BlACK;
+						g.color=RED;
 					} else {
-
+						rotateRight(p);
+						rotateLeft(g);
+						e.color=BlACK;
+						g.color=RED;
 					}
 				} else {
 					if (e == e.parent.left) {
-
+						rotateLeft(g);
+						p.color=BlACK;
+						g.color=RED;
 					} else {
-
+						rotateLeft(p);
+						rotateRight(g);
+						e.color=BlACK;
+						g.color=RED;
 					}
 				}
-
+				e=p;
 			}
 		}
 		root.color = BlACK;
@@ -189,7 +200,7 @@ public class MyRBTree<E> {
 			return;
 		for (int i = 0; i < x; i++)
 			System.out.print("-");
-		System.out.println(n.e);
+		System.out.println(n.e+"  " + (n.color?"红":"黑"));
 		preorderTraverse0(n.left, x + 1);
 		preorderTraverse0(n.right, x + 1);
 	}
@@ -197,10 +208,15 @@ public class MyRBTree<E> {
 	// 测试
 	public static void main(String[] args) {
 		MyRBTree<Integer> rbTree = new MyRBTree<>();
-		rbTree.add(5);
-		rbTree.add(13);
-		rbTree.add(1);
-		rbTree.add(4);
+		rbTree.add(50);
+		rbTree.add(35);
+		rbTree.add(78);
+		rbTree.add(27);
+		rbTree.add(45);
+		rbTree.add(56);
+		rbTree.add(90);
+		rbTree.add(40);
+		rbTree.add(48);
 		rbTree.preorderTraverse();
 	}
 
