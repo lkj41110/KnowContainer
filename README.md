@@ -8,6 +8,7 @@
 
 #### 剑指Offer题目
 - [Solution——不用加减乘除做加法](http://blog.csdn.net/qq_25673113/article/details/55827677)
+- [Solution2——二维数组中的查找](http://blog.csdn.net/qq_25673113/article/details/56668031)
 - [Solution3——连续子数组的最大和](http://blog.csdn.net/qq_25673113/article/details/56010250)
 - [Solution4——二叉搜索树的后序遍历序列](http://blog.csdn.net/qq_25673113/article/details/56010250)
 - [java面试题目记录](KnowContainer/java面试题目记录.md)
