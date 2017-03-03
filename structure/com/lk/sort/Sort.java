@@ -1,6 +1,4 @@
-package co.lk.sort;
-
-import java.util.Arrays;
+package com.lk.sort;
 
 /**
  * 排序,都从小到大
