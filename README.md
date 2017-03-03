@@ -6,18 +6,7 @@
 #### netty和io学习总结
 - [netty和io学习](https://github.com/lkj41110/netty_dome)
 
-#### 剑指Offer题目
-- [Solution——不用加减乘除做加法](http://blog.csdn.net/qq_25673113/article/details/55827677)
-- [Solution2——二维数组中的查找](http://blog.csdn.net/qq_25673113/article/details/56668031)
-- [Solution3——连续子数组的最大和](http://blog.csdn.net/qq_25673113/article/details/56010250)
-- [Solution4——二叉搜索树的后序遍历序列](http://blog.csdn.net/qq_25673113/article/details/56010250)
-- Solution5——根据先序和中序遍历返回二叉树
-- Solution6——用两个栈来实现一个队列
-- Solution7——斐波那契数列
-- [Solution8——跳台阶(斐波那契数列变形)](http://blog.csdn.net/qq_25673113/article/details/56840216)
-- Solution9——归并递增链表
-- Solution11——对称二叉树
-- Solution12——顺时针打印矩阵
+- [剑指Offer题目记录](https://github.com/lkj41110/KnowContainer/blob/master/java面试题目记录.md)
 - [java面试题目记录](https://github.com/lkj41110/KnowContainer/blob/master/java面试题目记录.md)
 
 ## 数据结构
