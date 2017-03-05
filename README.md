@@ -18,10 +18,13 @@
 - [从2-3-4树到红黑树（转载）](http://www.cnblogs.com/nullzx/p/6111175.html)
 
 #### 排序算法
-- [选择排序]()
-- [冒泡排序]()
-- [插入排序]()
-- [希尔排序]()
-- [快速排序]()
-- [堆排序]()
-- [Tim排序]()
+- 选择排序的实现
+- 插入排序的实现
+- 希尔排序的实现
+- 快速排序的实现
+- 堆排序的实现
+- [Tim排序源码解析](https://github.com/lkj41110/KnowContainer/blob/master/structure/com/lk/sort/timsort.md)
+
+## JVM
+- [垃圾收集(转载)](http://blog.csdn.net/qq_25673113/article/details/54342350)
+- [内存区域介绍](http://blog.csdn.net/qq_25673113/article/details/54342350)
