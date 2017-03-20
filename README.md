@@ -29,6 +29,6 @@
 - [垃圾收集(转载)](http://blog.csdn.net/qq_25673113/article/details/54342350)
 - [内存区域介绍](http://blog.csdn.net/qq_25673113/article/details/54342350)
 
-## Java
+## 工具以及操作系统
 - [git学习]
 - [Windows使用ssh登入远程服务器](http://blog.csdn.net/qq_25673113/article/details/64131516)
